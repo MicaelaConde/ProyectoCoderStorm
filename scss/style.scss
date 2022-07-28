@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+@import 'base/extends';
+@import 'base/variables';
+@import 'base/mapas';
+@import 'base/mixin';
+@import 'base/listas';
+@import 'components/header';
+@import 'components/cuerpoindex';
+@import 'components/footer';
+@import 'components/productos.scss';
+
+
+
+.formulario_cuenta{
+    padding-left: 30%;
+    padding-right: 30%;
+    display: flex;
+     flex-direction: column;
+     align-content: space-around;
+}
+
+.completar_datos{
+    padding-left: 31%;
+    padding-bottom: 2%;
+}
+
+
+
+
+/* Fin Responsive */ 

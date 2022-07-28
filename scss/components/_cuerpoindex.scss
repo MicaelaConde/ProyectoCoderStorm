@@ -1,0 +1,108 @@
+.button-group {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 8%;
+
+    .bton {
+        padding: 1% 2%;
+        border-radius: 0.375rem;
+        border: solid rgb(124, 92, 145) 1px;
+        text-decoration: none;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: large;
+        color: rgb(226, 176, 236);
+
+        &:hover {
+            background-color: rgba(37, 18, 49, 0.945);
+            ;
+        }
+
+        @media only screen and (max-width:480px) {
+            width: 20vw;
+            font-size: small;
+            text-align: center;
+        }
+
+    }
+
+
+}
+
+video {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+#carouselExampleControls {
+    margin-top: 10%;
+    margin-bottom: 10%;
+
+
+    .d-block {
+        height: 40vh;
+
+        @media only screen and (max-width:480px) {
+            height: 25vh;
+        }
+
+    }
+
+}
+
+.empresa {
+
+
+    padding-top: 3%;
+    .inf-empresa {
+
+        text-align: center;
+
+        .btn {
+            margin-bottom: 2%;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: large;
+            color: rgb(226, 176, 236);
+            background-color: transparent;
+            border: solid rgb(124, 92, 145) 1px;;
+            &:hover {
+                background-color: rgba(37, 18, 49, 0.945);
+            }
+        }
+    }
+    #collapseExample{
+        transition: 2s;
+    }
+    .collapse {
+        background-color: transparent;
+        
+    }
+
+    .card {
+
+        background-color: rgba(37, 18, 49, 0.466);
+        color: rgb(222, 202, 241);
+        border: none;
+        text-align: center;
+        font-size: large;
+        padding-left: 3%;
+        padding-right: 3%;
+
+        h2 {
+            font-size: larger;
+    
+        }
+
+    }
+
+    @media only screen and (max-width:480px) {
+        .btn {
+            width: 100px;
+            height: 60px;
+            font-size: 2%;
+            text-align: center;
+        }
+    }
+}

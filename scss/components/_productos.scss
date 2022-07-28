@@ -1,0 +1,101 @@
+.titulo_secciones {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.5vw;
+    color: nth($colores,2);
+    text-align: center;
+   @extend %margen;
+
+}
+
+.navbar {
+
+    background-color: rgb(184, 184, 201);
+}
+
+.filtro {
+
+    display: flex;
+   @extend %centrado;
+
+    .iconos {
+        padding-top: map-get($posicion, ptop-posicion);
+        padding-bottom: map-get($posicion, pbottom-posicion);
+        width: 4%;
+        height: 5%;
+    }
+
+    .iconos_camisa {
+        padding-top: 1.5%;
+
+        width: map-get($posicion, with);
+        height: 7vw;
+    }
+}
+
+.container{
+    .row {
+        height: 30vw;
+        @media only screen and (min-width: 481px) and (max-width: 960px){
+            height: 90vw; 
+        }
+
+        @media only screen and (max-width:480px){
+            height: 90vw; 
+        }
+        .col {
+
+            gap: 5%;
+
+            @media only screen and (min-width: 481px) and (max-width: 960px){
+                width: 55%;
+            }
+
+            @media only screen and (max-width:480px){
+                width: 50%;
+            }
+            .productos__item_productos {
+
+                height: 30vw;
+                @media only screen and (min-width: 481px) and (max-width: 960px){
+                    height: 45vw;
+                }
+                @media only screen and (max-width:480px){
+                    height: 40vw;
+                }
+
+                .imagen_producto {
+                    width: 100%;
+                    height: 90%;
+                }
+
+                .precio {
+                    display: flex;
+                    justify-content: right;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    font-size: x-large;
+                    @media only screen and (min-width: 481px) and (max-width: 960px){
+                        font-size: medium;
+                    }
+
+                    @media only screen and (max-width:480px){
+                        display: flex;
+                        justify-content: center;
+                        font-size: small;
+                    }
+                }
+
+
+            }
+        }
+    }
+
+}
+
+
+
+    .pagination {
+
+        padding-top: 7%;
+        display: flex;
+        justify-content: center;
+    }

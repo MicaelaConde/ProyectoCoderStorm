@@ -1,0 +1,40 @@
+#cabecera {
+
+    background-image: url(../Multimedia/Imagenes/Iconos/storm.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: map-get($posicion, height);
+    border-bottom: 3vh solid $colorprincipal2;
+
+    nav {
+        ul {
+            display: flex;
+            justify-content: space-between;
+            padding-right: 25px;
+            list-style-type: none;
+            font-size: large;
+            background-color: $colorprincipal2;
+            @media only screen and (max-width:480px){
+                 font-size: small;
+                 padding: 1%;
+                }
+        }
+    }
+
+    div {
+        @include flex(flex,center);
+        
+        img {
+            &:hover {
+                transform: rotateX(350deg);
+                transition: all 2.5s ease-in-out;
+            }
+        }
+    }
+
+    @media only screen and (max-width:480px){
+         .logo{
+      width: 60%;    
+         }
+    }
+}

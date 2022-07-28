@@ -1,0 +1,10 @@
+@mixin patronfondo{
+    background-color: #d2d1d4;
+    background-image: radial-gradient(#a595ae 2px, #d2d1d4 2px);
+    background-size: 40px 40px;
+}
+
+@mixin flex($disp,$juscon){
+    display: $disp;
+    justify-content: $juscon;
+}
