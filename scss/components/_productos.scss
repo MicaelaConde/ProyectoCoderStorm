@@ -14,21 +14,45 @@
 
 .filtro {
 
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 1%;
     display: flex;
    @extend %centrado;
+   @media only screen and (max-width:480px){
 
+margin-top: 5%;
+   }
     .iconos {
-        padding-top: map-get($posicion, ptop-posicion);
-        padding-bottom: map-get($posicion, pbottom-posicion);
+        
         width: 4%;
         height: 5%;
+
+        &:hover{
+          transform: scale(1.5);
+            transition: 0.5s;
+        }
+        @media only screen and (max-width:480px){
+            width: 7%;
+            height: 6%;
+    
+               }
     }
 
     .iconos_camisa {
-        padding-top: 1.5%;
-
-        width: map-get($posicion, with);
-        height: 7vw;
+        
+        width: 7%;
+    
+        
+        &:hover{
+            transform: scale(1.5);
+            transition: 0.5s;
+        }
+        @media only screen and (max-width:480px){
+            width: 11%;
+            height: 6%;
+    
+               }
     }
 }
 
