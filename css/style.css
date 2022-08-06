@@ -13,16 +13,13 @@
   justify-content: space-around;
 }
 
-#cabecera {
-  background-color: rgba(76, 76, 83, 0.151);
-}
 #cabecera nav ul {
   display: flex;
   justify-content: space-between;
   padding-right: 25px;
   list-style-type: none;
   font-size: large;
-  background-color: rgba(190, 184, 230, 0.918);
+  background-color: rgba(37, 18, 49, 0.466);
 }
 @media only screen and (max-width: 480px) {
   #cabecera nav ul {
@@ -153,19 +150,29 @@ video {
   }
 }
 #contacto ul {
+  padding-top: 1%;
+  padding-bottom: 1%;
   display: flex;
   justify-content: center;
   list-style-type: none;
+  background-color: rgba(37, 18, 49, 0.466);
 }
 #contacto ul .icono_contacto {
   margin-left: 22%;
   width: 25%;
+}
+#contacto ul .icono_contacto:hover {
+  width: 33%;
 }
 @media only screen and (max-width: 480px) {
   #contacto ul .icono_contacto {
     width: 25%;
     height: 25%;
   }
+}
+
+.fondo_header {
+  background-color: rgba(195, 185, 238, 0.8235294118);
 }
 
 .titulo_secciones {
@@ -222,7 +229,7 @@ video {
 }
 
 .bg_body {
-  background-color: rgba(42, 42, 173, 0.781);
+  background-color: rgba(174, 174, 201, 0.781);
 }
 .bg_body .container {
   padding-top: 3%;
