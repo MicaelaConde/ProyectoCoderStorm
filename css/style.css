@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -162,7 +163,8 @@ video {
   width: 25%;
 }
 #contacto ul .icono_contacto:hover {
-  width: 33%;
+  transform: scale(1.5);
+  transition: 0.4s;
 }
 @media only screen and (max-width: 480px) {
   #contacto ul .icono_contacto {
@@ -300,6 +302,177 @@ video {
   padding-top: 7%;
   display: flex;
   justify-content: center;
+}
+
+.body_cuenta {
+  background-color: #a2a6a8;
+}
+.body_cuenta nav ul {
+  font-size: large;
+  text-align: left;
+  list-style-type: none;
+  background-color: rgba(121, 105, 167, 0.205);
+}
+.body_cuenta header {
+  display: flex;
+}
+.body_cuenta header .logo {
+  width: 20%;
+  margin-left: 1%;
+  margin-top: 1%;
+}
+@media only screen and (max-width: 480px) {
+  .body_cuenta header .logo {
+    width: 30%;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 960px) {
+  .body_cuenta header .logo {
+    width: 35%;
+  }
+}
+.body_cuenta header h1 {
+  margin-top: 8%;
+  margin-left: 25%;
+}
+@media only screen and (max-width: 480px) {
+  .body_cuenta header h1 {
+    margin-left: 10%;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 960px) {
+  .body_cuenta header h1 {
+    margin-left: 10%;
+  }
+}
+.body_cuenta .container {
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: 25vw 1fr;
+  gap: 10px;
+  height: 25vw;
+}
+@media only screen and (max-width: 480px) {
+  .body_cuenta .container {
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 90vw;
+    grid-template-rows: 52vw;
+    gap: 10px;
+    height: 40vw;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 960px) {
+  .body_cuenta .container {
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 30vw 60vw;
+    gap: 10px;
+    height: 40vw;
+    margin-left: 0;
+  }
+}
+.body_cuenta .container .sesion {
+  width: 90%;
+  border-right: solid black 1px;
+  margin-left: 10%;
+}
+@media only screen and (max-width: 480px) {
+  .body_cuenta .container .sesion {
+    border-right: none;
+    border-bottom: solid 1px black;
+  }
+}
+.body_cuenta .container .sesion h2 {
+  text-align: left;
+  font-size: 160%;
+}
+@media only screen and (max-width: 480px) {
+  .body_cuenta .container .sesion h2 {
+    margin-top: 5%;
+  }
+}
+.body_cuenta .container .sesion .completar_datos {
+  display: block;
+  padding-left: 0%;
+  margin-top: 10%;
+}
+@media only screen and (max-width: 480px) {
+  .body_cuenta .container .sesion .completar_datos {
+    margin-top: 1%;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 960px) {
+  .body_cuenta .container .sesion .completar_datos {
+    margin-left: 0%;
+    padding-left: 0;
+  }
+}
+.body_cuenta .container .sesion .completar_datos p {
+  margin-bottom: 0;
+}
+.body_cuenta .container .sesion .completar_datos input {
+  margin-bottom: 5%;
+}
+.body_cuenta .container .sesion .completar_datos .btn {
+  border: solid black 1px;
+  margin-left: 33%;
+}
+.body_cuenta .container .sesion .completar_datos .btn:hover {
+  background-color: rgba(118, 87, 189, 0.644);
+}
+@media only screen and (max-width: 480px) {
+  .body_cuenta .container .sesion .completar_datos .btn {
+    padding: 0%;
+    margin-top: 0.5%;
+  }
+}
+
+.registro {
+  padding-left: 4%;
+  text-align: left;
+}
+.registro h2 {
+  font-size: 160%;
+}
+@media only screen and (min-width: 481px) and (max-width: 960px) {
+  .registro h2 {
+    text-align: center;
+  }
+}
+.registro .datos_personales {
+  margin-top: 4%;
+  display: flex;
+  justify-items: center;
+}
+.registro .datos_personales div {
+  margin-right: 10%;
+  margin-bottom: 2.5%;
+}
+.registro .datos_personales div p {
+  margin-bottom: 0%;
+}
+.registro .datos_mail p {
+  margin-bottom: 0%;
+}
+.registro .contraseña {
+  display: flex;
+  margin-top: 3%;
+}
+.registro .contraseña div {
+  margin-right: 10%;
+  margin-bottom: 2%;
+}
+.registro .contraseña div p {
+  margin-bottom: 0%;
+}
+.registro .btn {
+  border: solid black 1px;
+  margin-top: 1%;
+  margin-left: 45%;
+}
+.registro .btn:hover {
+  background-color: rgba(118, 87, 189, 0.644);
 }
 
 .formulario_cuenta {
