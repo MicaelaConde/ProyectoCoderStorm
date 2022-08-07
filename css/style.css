@@ -19,13 +19,14 @@
   justify-content: space-between;
   padding-right: 25px;
   list-style-type: none;
-  font-size: large;
+  font-size: x-large;
   background-color: rgba(37, 18, 49, 0.466);
 }
 @media only screen and (max-width: 480px) {
   #cabecera nav ul {
-    font-size: small;
+    font-size: medium;
     padding: 1%;
+    background-color: rgba(37, 18, 49, 0.466);
   }
 }
 #cabecera div {
@@ -168,8 +169,7 @@ video {
 }
 @media only screen and (max-width: 480px) {
   #contacto ul .icono_contacto {
-    width: 25%;
-    height: 25%;
+    width: 15%;
   }
 }
 
@@ -183,9 +183,25 @@ video {
   color: rgb(7, 7, 7);
   text-align: center;
 }
+@media only screen and (max-width: 480px) {
+  .titulo_secciones {
+    font-size: medium;
+  }
+}
 
 .navbar {
   background-color: rgb(184, 184, 201);
+}
+@media only screen and (max-width: 480px) {
+  .navbar .container-fluid .d-flex {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .navbar .container-fluid .d-flex .btn {
+    border: none;
+    font-size: small;
+  }
 }
 
 .filtro {
@@ -199,6 +215,7 @@ video {
 }
 @media only screen and (max-width: 480px) {
   .filtro {
+    margin-left: 10%;
     margin-top: 5%;
   }
 }
@@ -225,7 +242,7 @@ video {
 }
 @media only screen and (max-width: 480px) {
   .filtro .iconos_camisa {
-    width: 11%;
+    width: 60%;
     height: 6%;
   }
 }
@@ -235,6 +252,11 @@ video {
 }
 .bg_body .container {
   padding-top: 3%;
+}
+@media only screen and (max-width: 481px) {
+  .bg_body .container {
+    padding-right: 0%;
+  }
 }
 .bg_body .container .row {
   width: 100%;
@@ -251,6 +273,11 @@ video {
 }
 .bg_body .container .row .col {
   gap: 5%;
+}
+@media only screen and (max-width: 481px) {
+  .bg_body .container .row .col {
+    padding-right: 0%;
+  }
 }
 @media only screen and (min-width: 481px) and (max-width: 960px) {
   .bg_body .container .row .col {
@@ -357,9 +384,6 @@ video {
     margin-top: 5%;
     display: grid;
     grid-template-columns: 90vw;
-    grid-template-rows: 52vw;
-    gap: 10px;
-    height: 40vw;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 960px) {
@@ -368,7 +392,6 @@ video {
     display: grid;
     grid-template-columns: 30vw 60vw;
     gap: 10px;
-    height: 40vw;
     margin-left: 0;
   }
 }
@@ -379,6 +402,7 @@ video {
 }
 @media only screen and (max-width: 480px) {
   .body_cuenta .container .sesion {
+    height: 45vh;
     border-right: none;
     border-bottom: solid 1px black;
   }
@@ -393,13 +417,12 @@ video {
   }
 }
 .body_cuenta .container .sesion .completar_datos {
-  display: block;
   padding-left: 0%;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 @media only screen and (max-width: 480px) {
   .body_cuenta .container .sesion .completar_datos {
-    margin-top: 1%;
+    margin-top: 2%;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 960px) {
@@ -429,13 +452,24 @@ video {
 }
 
 .registro {
+  padding-top: 10%;
   padding-left: 4%;
   text-align: left;
+}
+@media only screen and (max-width: 480px) {
+  .registro {
+    display: block;
+  }
 }
 .registro h2 {
   font-size: 160%;
 }
 @media only screen and (min-width: 481px) and (max-width: 960px) {
+  .registro h2 {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 480px) {
   .registro h2 {
     text-align: center;
   }
@@ -452,6 +486,11 @@ video {
 .registro .datos_personales div p {
   margin-bottom: 0%;
 }
+@media only screen and (max-width: 480px) {
+  .registro .datos_personales {
+    display: block;
+  }
+}
 .registro .datos_mail p {
   margin-bottom: 0%;
 }
@@ -466,6 +505,12 @@ video {
 .registro .contraseña div p {
   margin-bottom: 0%;
 }
+@media only screen and (max-width: 480px) {
+  .registro .contraseña {
+    display: block;
+    justify-items: center;
+  }
+}
 .registro .btn {
   border: solid black 1px;
   margin-top: 1%;
@@ -473,6 +518,12 @@ video {
 }
 .registro .btn:hover {
   background-color: rgba(118, 87, 189, 0.644);
+}
+@media only screen and (max-width: 480px) {
+  .registro .btn {
+    margin-top: 5%;
+    margin-left: 33%;
+  }
 }
 
 .formulario_cuenta {
