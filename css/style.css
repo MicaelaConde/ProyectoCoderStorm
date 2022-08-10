@@ -266,11 +266,6 @@ video {
     height: 90vw;
   }
 }
-@media only screen and (max-width: 480px) {
-  .bg_body .container .row {
-    height: 90vw;
-  }
-}
 .bg_body .container .row .col {
   gap: 5%;
 }
@@ -402,9 +397,10 @@ video {
 }
 @media only screen and (max-width: 480px) {
   .body_cuenta .container .sesion {
-    height: 45vh;
+    height: 50vh;
     border-right: none;
     border-bottom: solid 1px black;
+    margin-top: 10%;
   }
 }
 .body_cuenta .container .sesion h2 {
@@ -413,7 +409,7 @@ video {
 }
 @media only screen and (max-width: 480px) {
   .body_cuenta .container .sesion h2 {
-    margin-top: 5%;
+    margin-bottom: 10%;
   }
 }
 .body_cuenta .container .sesion .completar_datos {
@@ -455,11 +451,6 @@ video {
   padding-top: 10%;
   padding-left: 4%;
   text-align: left;
-}
-@media only screen and (max-width: 480px) {
-  .registro {
-    display: block;
-  }
 }
 .registro h2 {
   font-size: 160%;
@@ -522,7 +513,8 @@ video {
 @media only screen and (max-width: 480px) {
   .registro .btn {
     margin-top: 5%;
-    margin-left: 33%;
+    margin-left: 25%;
+    margin-bottom: 10%;
   }
 }
 
